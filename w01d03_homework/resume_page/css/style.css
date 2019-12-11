@@ -1,3 +1,4 @@
+
 h1 {
     text-align: center;
     font-family: 'Tomorrow', sans-serif; 
@@ -9,7 +10,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%
+    width: 75%
 }
 
 h3 {
@@ -21,16 +22,27 @@ body {
     padding: 25%;
     text-align: left;
 }
-
-ul {
-    float: left;
-    font-family: 'Source Sans Pro', sans-serif;
+/* I dont know how to get these side beside. Diving me insane! */
+nav {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.399);
 }
-footer {
-    text-align: center;
-}
-h4 {
-    color: olivedrab;
+a:link, a:visited {
     font-family: 'Montserrat', sans-serif;
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+a:hover, a:active {
+    background-color: rgb(4, 85, 17);
+  }
+ul.work-positions {
+    font-family: 'Montserrat', sans-serif;
 }

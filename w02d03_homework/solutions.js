@@ -27,3 +27,31 @@ const sumArray = (arr) => {
 }
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
+// Prime Numbers
+
+const checkPrime = num => {
+    for(let i =2; i <= Math.sqrt(num); i++); { // I think??
+        if (num % i === 0) {
+            return false
+        }
+    }
+    return true  
+}
+console.log(checkPrime(25));
+
+const printPrimes = (limit) => {
+    for(let i = 0; i <= limit; i++); {
+        if(checkPrime(i)); {
+            console.lof(i);
+        }
+    }
+}
+printPrimes(98);
+
+// rock paper sissors
+// I don't even know where to start with this....
+
+//const ranMove = () => {
+  //  const moveArray = ["rock", "paper", "scissors"];
+  //  const ranNum = Math.floor(Math.random() * (moveArray.length))
+//} Dont know how to continue

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+  }
+  main {
+      background: url("../cliufqx.jpg");
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 42px;
+  }
+  
+  h1, h2, h3 {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+  }
+  div#ask {
+    display: flex;
+    justify-content: center;
+  }
+  .buttons {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+  }
+  .buttons button {
+    margin-right: 2em;
+  }

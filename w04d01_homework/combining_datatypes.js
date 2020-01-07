@@ -28,3 +28,21 @@ const apartmentBuilding = {
     tenantNames: ["John", "Jacob", "Bill", "Gary"]
 }
 console.log(apartmentBuilding.tenantNames[1]);
+
+/// Combine objects, arrays, and functions more than one level deep
+
+const knit = {
+    item: "scarf",
+    size: "6ft"
+}
+console.log(knit.size);
+
+const crayonSelector = {
+    crayonBox
+}
+console.log(crayonSelector.crayonBox)
+
+const powerButton = {
+    options: "Select a Song"
+}
+console.log(powerButton.options)

@@ -46,3 +46,54 @@ const powerButton = {
     options: "Select a Song"
 }
 console.log(powerButton.options)
+
+
+/// Vending Machine
+
+const vendingMachine = {
+    snacks: [
+        {name: "Twinkie", price: 1.00},
+        {name: "Chips", price: 1.50},
+        {name: "Skittles", price: 2.00},
+        {name: "M&Ms", price: 2.00},
+    ]
+}
+//vend (input) {
+//    console.log('vending', vendingMachine.snacks[input]);
+//}
+///vendingMachine.vend(2);
+//Not sure how to do this one. I kept getting syntaxerror: unexpected token{
+
+  function add(x, y) {
+        return x+y;
+    }
+    console.log(add(7, 3));
+function subtract(x, y) {
+    return x-y;
+}
+console.log(subtract(7,2));
+
+function multiply(x, y){
+    return x*y;
+}
+console.log(multiply(5, 5));
+
+function divide( x, y) {
+    return x%y;
+}
+console.log(divide(2, 10));
+//////////
+/////////
+////////
+///bar();
+const bar = () => {
+    console.log('bar here');
+}
+bar():
+//foo();
+
+const foo = () => {
+    console.log('foo here');
+}
+foo();
+

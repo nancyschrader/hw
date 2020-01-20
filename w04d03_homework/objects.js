@@ -71,7 +71,7 @@ for (let i=o; i < 6; i++){
     timmy.ageUp();
 } timmy.getAge();
 
-for (let i=0; i < 6, i++) {
+for (let i=0; i < 6; i++) {
     timmy.eat();
 } timmy.getWeight();
 
@@ -93,10 +93,12 @@ for (let i=0; i < 16; i++) {
     timmy.ageUp();
 } timmy.getAge();
 
-for (let i=0; i < 3, i++) {
+for (let i=0; i < 3; i++) {
     timmy.eat();
 } timmy.getWeight();
 
 for (let i=0; i < 3; i++) {
     timmy.exercise();
 } timmy.getWeight();
+
+

@@ -63,3 +63,40 @@ class Person {
         // is throwing me off.
     }
 }
+// Creating a story
+
+const timmy = new Person('Timmy');
+
+for (let i=o; i < 6; i++){
+    timmy.ageUp();
+} timmy.getAge();
+
+for (let i=0; i < 6, i++) {
+    timmy.eat();
+} timmy.getWeight();
+
+for (let i=0; i < 6; i++) {
+    timmy.exercise();
+} timmy.getWeight();
+
+for (let i=0; i < 10; i++) {
+    timmy.ageUp();
+} timmy.getAge();
+
+const gus = new Hamster("Gus");
+gus.owner = "Timmy";
+console.log(gus);
+timmy.buyHamster(gus);
+console.log( "Timmy's Hamsters: ", timmy.hamsters);
+
+for (let i=0; i < 16; i++) {
+    timmy.ageUp();
+} timmy.getAge();
+
+for (let i=0; i < 3, i++) {
+    timmy.eat();
+} timmy.getWeight();
+
+for (let i=0; i < 3; i++) {
+    timmy.exercise();
+} timmy.getWeight();

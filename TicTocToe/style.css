@@ -1,0 +1,28 @@
+Body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+    height: 500px;
+    width: 500px;
+}
+
+.square {
+    border: 3px solid rgba(0, 0, 0, .75);
+    height: 150px;
+    width: 150px;
+}

@@ -1,18 +1,20 @@
 const express = require('express');
 const app = express();
-const port = 3001;
-const pokemon = require("./models/pokemon.js");
+const port = 3000;
 
-app.get("/", (req, res)=> {
-    res.send('Welcome to the Pokemon App!')
-});
-app.get("/pokemon", (req, res) => {
-    res.render("index.ejs", {pokemon: pokemon});
-});
-app.get("/pokemon/:id", (req, res) => {
-    res.send(pokemon[req.params.id]);
-})
+const fruits = require("./models/fruits.js");
 
-app.listen(port, () => {
-    console.log("listening on port", port)
-})
+app.get('/fruits/', (req,res) =>{
+    res.render("show.ejs", {fruit: fruits[req.params]});
+});
+// add show route
+app.get('/fruits/:indexOfFruit', (req, res) => {
+    // res.send(fruits[req.params.indexOfFruit]);
+    res.render("show.ejs", { fruit: fruits[req.params.indexOfFruit] } );
+});
+
+
+
+ app.listen(port, () => {
+     console.log("listening on port", port);
+ });

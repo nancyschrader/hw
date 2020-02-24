@@ -1,0 +1,15 @@
+<h1>Listing all Pokemons:</h1>
+<p>
+  <a href="/pokemon/new">Add a new Pokemon</a>
+</p>
+<% for (let i in pokemon) { %>
+<h2><%= pokemon[i].name %></h2>
+<p><img src="<%= pokemon[i].img %>" alt="<%= pokemon[i].name %>" width="50px"></p>
+<a href="/pokemon/<%= i %>">Show this Pokemon</a> |
+<a href="/pokemon/<%= i %>/edit">Edit this Pokemon</a>
+<form action="/pokemon/<%= i %>?_method=DELETE" method="POST">
+  <input type="submit" value="DELETE POKEMON">
+</form>
+<hr>
+<% } %>
+

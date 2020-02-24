@@ -1,0 +1,13 @@
+<h1><%= pokemon.name %></h1>
+<ul>
+  <% for (let type of pokemon.type) { %>
+  <li><%= type %></li>
+  <% } %>
+</ul>
+<img src="<%= pokemon.img %>" alt="picture of pokemon" width="200px">
+<h2>Stats:</h2>
+<p>HP: <%= pokemon.stats.hp %></p>
+<p>Attack: <%= pokemon.stats.attack %></p>
+<p>Defense: <%= pokemon.stats.defense %></p>
+
+<a href="/pokemon">Back to index</a>

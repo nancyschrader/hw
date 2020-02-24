@@ -10,6 +10,7 @@ const port = 3000;
 const methodOverride = require("method-override");
 
 
+
 const Pokemon = require("./models/pokemon.js");
 
 // Load body parser middleware:
@@ -18,7 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 // Load methodOverride as middleware to support ?_method=<METHOD> query strings:
 app.use(methodOverride("_method"));
 
-// Define one or more routes:
+app.use(express.static(__dirname + '/public'));
 
 // NEW
 app.get("/pokemon/new", (req, res) => {

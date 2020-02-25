@@ -1,0 +1,18 @@
+
+
+.pokemon {
+    border: maroon 2px solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+}
+
+/* .image, .show, .delete {
+    border: green 2px solid;
+    display: flex;
+    
+    
+   
+    
+} */

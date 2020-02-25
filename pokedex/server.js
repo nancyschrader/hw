@@ -47,7 +47,7 @@ app.get("/pokemon/:id", (req, res) => {
 
 // DESTROY
 app.delete("/pokemon/:id", (req, res) => {
-  pokemon.splice(req.params.id, 1); //remove the item from the array
+  Pokemon.splice(req.params.id, 1); //remove the item from the array
   res.redirect("/pokemon"); //redirect to index page
 });
 

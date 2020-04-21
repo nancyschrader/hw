@@ -1,17 +1,15 @@
-const express = require('express');
+const express = require("express");
+const parser = require("body-parser");
 const app = express();
-const mongoose = require('mongoose');
-const Products = require('../models/products.js');
-const methodOverRide = require('method-override');
 
-app.use(express.urlencoded({extended:true}));
-app.use(methodOverRide('_method'));
 
-mongoose.connect('mongodb://localhost:27017/productsdb', {useNewUrlParser: true, useUnifiedTopology: true});
-mongoose.connect.once('open', () => {
-    console.log('connected to mongo');
-});
+app.use(parser.urlencoded({ extended: true }));
+app.use(parser.json());
 
-const productController = require('.controllers/products.js');
+const seedRoutes = require("./routes/seedRoutes");
+app.use('/seed', seedRoutes)
 
-app.use('/products', productsController)
+const productRoutes = require("./routes/productRoutes");
+app.use('/products', productRoutes)
+
+app.listen(3000, () => console.log("Up and working."));

@@ -15,3 +15,40 @@ Migrating to CreateTweets (20200425202418)
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(1344325399035759420)[0m
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (2.2ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Blood's a Rover"], ["content", "Folklore"], ["author", "Sigrid Simonis Jr."]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Oh! To be in England"], ["content", "Mythopoeia"], ["author", "Francisco Weimann"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "The Moving Toyshop"], ["content", "Legend"], ["author", "Jamey Crooks"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "The Millstone"], ["content", "Metafiction"], ["author", "Gilda Wiza"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Oh! To be in England"], ["content", "Classic"], ["author", "Markus Johnston"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "The Parliament of Man"], ["content", "Fanfiction"], ["author", "Mrs. Lazaro Altenwerth"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.4ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Unweaving the Rainbow"], ["content", "Science fiction"], ["author", "Shawana Pollich"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.3ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "To Sail Beyond the Sunset"], ["content", "Short story"], ["author", "Jamison Kuhlman"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "Everything is Illuminated"], ["content", "Biography/Autobiography"], ["author", "Kate Wintheiser"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTweet Create (0.2ms)[0m  [1m[32mINSERT INTO "tweets" ("title", "content", "author") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "That Good Night"], ["content", "Crime/Detective"], ["author", "Tera Strosin"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTweet Load (0.4ms)[0m  [1m[34mSELECT "tweets".* FROM "tweets" LIMIT $1[0m  [["LIMIT", 11]]

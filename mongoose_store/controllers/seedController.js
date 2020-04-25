@@ -7,7 +7,6 @@ const seed = (req, res) => {
    Product.deleteMany({}).then(() => {
         Product.collection.insertMany(productData)
         .then(products => {
-            // console.log('product', produc)
             res.json(products)
         }).catch(err => {
             console.log(err)

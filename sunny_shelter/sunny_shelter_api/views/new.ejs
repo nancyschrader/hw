@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1>Nre Animal arriving in Shelter</h1>
+        <form action="/animals" method="POST">
+            Name: <input type="text" name="Name" value="<%=animal.name%>"/><br/>
+            Breed: <input type="text" name="Breed" value="<%=animal.breed%>"/><br/>
+            Color: <input type="text" name="Color" value="<%=animal.color%>"/><br/>
+    		Are they ready for adoption:
+            <input type="checkbox" name="upForAdoption">
+        </form>
+    </body>
+</html>
